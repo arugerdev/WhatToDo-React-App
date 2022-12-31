@@ -1,0 +1,51 @@
+.socialNets {
+    display: flex;
+    border-top: 3px solid var(--bg-dark);
+    border-bottom: 3px solid var(--bg-dark);
+    height: 5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.socialNet-Button>img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialNet-Button {
+    display: flex;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px solid var(--text);
+
+    transition: all .3s ease;
+}
+
+.socialNet-Button:hover {
+    transform: scale(1.1);
+    padding: 6px;
+}
+
+.dark .socialNet-Button>img {
+    filter: invert(1);
+}
+
+
+@media screen and (max-width: 250px) {
+    .socialNets {
+        flex-direction: column;
+        height: 10rem;
+    }
+
+    .socialNet-Button {
+        margin-top: 10px;
+    }
+
+}

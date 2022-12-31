@@ -1,0 +1,126 @@
+.header {
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 5rem;
+    background: var(--bg-dark);
+    box-shadow: 0px 5px 10px var(--bg-dark);
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-link {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    left: 0;
+    font-size: 0;
+}
+
+.logo {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    width: calc(10px + 3vmin);
+    height: calc(10px + 3vmin);
+    color: var(--text);
+    cursor: pointer;
+
+    transition: all .15s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+
+.header-buttons {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-butt {
+    display: flex;
+    color: var(--text);
+    font-size: calc(15px + 2vmin);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 5vw;
+
+    transition: all .15s ease;
+}
+
+.header-butt:hover,
+.header-butt:focus {
+    color: var(--primary-color);
+}
+
+.changetheme-button {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 2px solid var(--text);
+    padding: 3px;
+    margin-right: 2vw;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    transition: all .15s ease;
+}
+
+.changetheme-button:hover {
+    padding: 6px;
+    transform: scale(1.1);
+    filter: opacity(0.8);
+}
+
+.changetheme-button>img {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+body.light .light-icon {
+    display: flex;
+}
+
+body.light .dark-icon {
+    display: none;
+}
+
+body.dark .light-icon {
+    display: none;
+}
+
+body.dark .dark-icon {
+    display: flex;
+    filter: invert(1);
+}
+
+
+@media screen and (max-width: 450px) {
+    .logo-link {
+        display: none;
+    }
+
+    .changetheme-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .changetheme-button>img {
+        width: 20px;
+        height: 20px;
+    }
+}

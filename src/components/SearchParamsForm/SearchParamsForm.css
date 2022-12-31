@@ -1,0 +1,132 @@
+.searchForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--text);
+    font-size: calc(10px + 0.85vmin);
+}
+
+.parent-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+
+
+.all-options {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background: var(--bg-dark);
+    font-size: calc(10px + 1.1vmin);
+    color: var(--text);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px var(--bg-dark);
+
+    transition: all .3s ease;
+}
+
+.all-option {
+    color: var(--text);
+    font-size: calc(10px + 1.1vmin);
+    padding: 15px;
+
+}
+
+.all-options:hover,
+.all-options:focus {
+    background: var(--primary-color);
+}
+
+.all-input-range {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    max-width: 30vw;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: var(--primary-color);
+}
+
+.price-free {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button {
+    display: flex;
+    font-size: calc(10px + 1vmin);
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 10px;
+    border: none;
+    color: var(--text);
+    text-align: center;
+    font-weight: 600;
+    border-radius: 25px;
+    background: var(--bg-dark);
+    box-shadow: 0px 0px 10px var(--bg-dark);
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.search-button:hover {
+    transform: scale(1.05);
+    background: var(--primary-color);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .parent-input {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .searchForm {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .all-options,
+    .all-input-range,
+    .parent-input {
+        margin: 5px;
+    }
+
+    .input {
+        flex-direction: column;
+    }
+
+
+}

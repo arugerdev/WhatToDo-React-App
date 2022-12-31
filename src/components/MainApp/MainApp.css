@@ -1,0 +1,54 @@
+.main-app {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.error {
+    color: red;
+    font-size: calc(20px + 3vmin);
+    margin: 40px;
+}
+
+.startTitle {
+    color: var(--primary-color);
+    margin-top: 20px;
+    font-weight: 900;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.startInfo {
+    display: flex;
+    color: var(--text);
+    margin: 5px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 300px) {
+
+    div,
+    form,
+    p,
+    h1,
+    input,
+    label,
+    select,
+    option {
+        margin: 0;
+        padding: 0;
+    }
+}
+
