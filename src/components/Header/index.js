@@ -1,8 +1,8 @@
 import React from "react";
-import './Header.css'
+import "./Header.css"
 import { Link } from "wouter";
-import lightLogo from '../../images/light.png'
-import moonLogo from '../../images/moon.png'
+import lightLogo from "images/light.png"
+import moonLogo from "images/moon.png"
 
 export default function Header() {
     return (

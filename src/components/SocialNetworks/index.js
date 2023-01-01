@@ -1,8 +1,8 @@
 import React from "react";
-import './SocialNetworks.css'
-import gitHub from '../../images/github.png'
-import instagram from '../../images/instagram.png'
-import linkedin from '../../images/linkedin.png'
+import "./SocialNetworks.css"
+import gitHub from "images/github.png"
+import instagram from "images/instagram.png"
+import linkedin from "images/linkedin.png"
 
 export default function SocialNetworks() {
     return (

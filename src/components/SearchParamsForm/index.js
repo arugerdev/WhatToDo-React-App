@@ -1,5 +1,5 @@
 import React from "react";
-import './SearchParamsForm.css'
+import "./SearchParamsForm.css"
 
 export default function SearchParamsForm({ HandleChange, HandleSumbit, typOfaccesibility, accessibility, customPrice, price }) {
     

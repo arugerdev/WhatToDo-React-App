@@ -40,3 +40,20 @@ body.dark {
   --primary-color: #fca311;
   --secundary-color: #14213d;
 }
+
+
+::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(120, 120, 120);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(50, 50, 50);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}

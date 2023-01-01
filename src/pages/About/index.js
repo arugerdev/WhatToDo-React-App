@@ -1,6 +1,6 @@
 import React from "react";
-import SocialNetworks from "../../components/SocialNetworks";
-import './About.css'
+import SocialNetworks from "components/SocialNetworks";
+import "./About.css"
 
 export default function About() {
     return (

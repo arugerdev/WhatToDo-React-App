@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import getActivity from "../../services/getActivity";
-import Activity from "../Activity";
-import Spinner from "../Spinner";
+import getActivity from "services/getActivity";
+import Activity from "components/Activity";
+import Spinner from "components/Spinner";
 import './MainApp.css'
-import SearchParamsForm from "../SearchParamsForm";
+import SearchParamsForm from "components/SearchParamsForm";
 
 
 export default function MainApp() {
@@ -23,8 +23,8 @@ export default function MainApp() {
 
     const HandleSumbit = evt => {
         evt.preventDefault()
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        useEffect(getActivity(type, accessibility, price, customPrice, typOfaccesibility).then(data => setActivity(data)), [type, accessibility, price, customPrice, typOfaccesibility])
+        setLoading(true)
+        getActivity(type, accessibility, price, customPrice, typOfaccesibility).then((data) => { setActivity(data); setLoading(false) })
     }
 
     const HandleChange = evt => {
@@ -44,8 +44,6 @@ export default function MainApp() {
         if (evt.target.name === 'price') {
             setPrice(evt.target.value)
         }
-
-
     }
 
     return (
