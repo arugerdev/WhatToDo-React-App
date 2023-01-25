@@ -30,7 +30,7 @@ export default function About() {
             <br></br>
             <br></br>
 
-            <p className="text">If you want know more of me, you can enter in my web <a className="link" href="http://aruger.dev" target='_blanks'>aruger.dev</a>.</p>
+            <p className="text">If you want know more of me, you can enter in my web <a className="link" href="http://arugerdev.vercel.app" target='_blanks'>aruger.dev</a>.</p>
 
             <br></br>
             <br></br>
